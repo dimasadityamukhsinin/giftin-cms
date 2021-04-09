@@ -58,13 +58,6 @@ export default {
       fieldset: "shopify",
     },
     {
-      name: "deleted",
-      title: "Deleted",
-      type: "boolean",
-      description: "This can be a flag set if the item is deleted from Shopify",
-      fieldset: "shopify",
-    },
-    {
       title: "Display Title",
       name: "title",
       type: "string",
@@ -75,16 +68,13 @@ export default {
       title: "title",
       variantTitle: "variantTitle",
       productTitle: "productTitle",
-      deleted: "deleted",
     },
     prepare({
       title,
       variantTitle,
-      productTitle = "(missing product)",
-      deleted,
+      productTitle = "(missing product)"
     }) {
       const getSubtitle = () => {
-        console.log(deleted);
         if (title) {
           return title === variantTitle ? null : `(${variantTitle})`;
         } else {

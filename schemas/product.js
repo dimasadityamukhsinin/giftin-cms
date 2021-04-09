@@ -51,14 +51,6 @@ export default {
       fieldset: 'shopify'
     },
     {
-      name: 'mainImage',
-      title: 'Main image',
-      type: 'image',
-      options: {
-        hotspot: true
-      }
-    },
-    {
       name: 'productDescription',
       title: 'Product Description',
       type: 'blockContent'
