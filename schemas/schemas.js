@@ -12,6 +12,7 @@ import post from './post'
 import siteSettings from './siteSettings'
 import product from './product'
 import variant from './variant'
+import collection from './collection'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -29,6 +30,7 @@ export default createSchema({
     siteSettings,
     product,
     variant,
+    collection
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

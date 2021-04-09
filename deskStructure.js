@@ -1,10 +1,11 @@
 import S from "@sanity/desk-tool/structure-builder";
 import React from "react";
-import { FiGift, FiCopy } from "react-icons/fi";
+import { FiGift, FiCopy, FiGrid } from "react-icons/fi";
 
 const hiddenTypes = [
   "product",
   "productVariant",
+  "collection",
   "page",
   "post",
   "siteSettings",
@@ -66,6 +67,11 @@ export default () =>
                 )
             )
         ),
+      S.listItem()
+        .title("Collection")
+        .icon(FiGrid)
+        .schemaType("collection")
+        .child(S.documentTypeList("collection").title("Collections")),
       ...S.documentTypeListItems().filter(
         (listItem) => !hiddenTypes.includes(listItem.getId())
       ),
