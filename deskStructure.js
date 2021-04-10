@@ -16,28 +16,6 @@ export default () =>
     .title("Content")
     .items([
       S.listItem()
-        .title("Site Settings")
-        .child(
-          S.editor()
-            .id("siteSettings")
-            .schemaType("siteSettings")
-            .documentId("siteSettings")
-        )
-        .icon(() => (
-          <span style={{ fontSize: "1.6rem" }} role="img">
-            🌐
-          </span>
-        )),
-      S.listItem()
-        .title("Posts")
-        .schemaType("post")
-        .child(S.documentTypeList("post").title("Posts"))
-        .icon(() => (
-          <span style={{ fontSize: "1.6rem" }} role="img">
-            📄
-          </span>
-        )),
-      S.listItem()
         .title("Products")
         .icon(FiGift)
         .schemaType("product")

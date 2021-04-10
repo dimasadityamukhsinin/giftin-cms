@@ -68,6 +68,22 @@ export default {
       fieldset: "shopify",
     },
     {
+      name: "weight",
+      title: "Weight",
+      type: "number",
+      description: "This comes from Shopify and cannot be changed",
+      readOnly: true,
+      fieldset: "shopify",
+    },
+    {
+      name: "productType",
+      title: "Product Type",
+      type: "string",
+      description: "This comes from Shopify and cannot be changed",
+      readOnly: true,
+      fieldset: "shopify",
+    },
+    {
       name: "image",
       title: "image",
       type: "image",

@@ -7,9 +7,6 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 // We import object and document schemas
 import blockContent from './blockContent'
 import blockText from './blockText'
-import page from './page'
-import post from './post'
-import siteSettings from './siteSettings'
 import product from './product'
 import variant from './variant'
 import collection from './collection'
@@ -25,9 +22,6 @@ export default createSchema({
     // in the studio.
     blockContent,
     blockText,
-    page,
-    post,
-    siteSettings,
     product,
     variant,
     collection
