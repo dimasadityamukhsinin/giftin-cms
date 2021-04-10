@@ -31,8 +31,8 @@ export default {
       type: "array",
       of: [
         {
-          title: "Title",
-          name: "title",
+          title: "Product",
+          name: "product",
           type: "reference",
           to: [{ type: "product" }],
         },

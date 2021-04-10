@@ -20,31 +20,31 @@ export default () =>
         .icon(FiGift)
         .schemaType("product")
         .child(S.documentTypeList("product").title("Products")),
-      S.listItem()
-        .title("Product Variants")
-        .icon(FiCopy)
-        .child(
-          S.documentTypeList("product")
-            .title("By Product")
-            .menuItems(S.documentTypeList("product").getMenuItems())
-            .filter("_type == $type")
-            .params({ type: "product" })
-            .child((productId) =>
-              S.documentList()
-                .title("Variants")
-                .menuItems(S.documentTypeList("productVariant").getMenuItems())
-                .filter("_type == $type && productId == $id")
-                .params({
-                  type: "productVariant",
-                  id: Number(productId.replace("product-", "")),
-                })
-                .child((documentId) =>
-                  S.document()
-                    .documentId(documentId)
-                    .schemaType("productVariant")
-                )
-            )
-        ),
+      // S.listItem()
+      //   .title("Product Variants")
+      //   .icon(FiCopy)
+      //   .child(
+      //     S.documentTypeList("product")
+      //       .title("By Product")
+      //       .menuItems(S.documentTypeList("product").getMenuItems())
+      //       .filter("_type == $type")
+      //       .params({ type: "product" })
+      //       .child((productId) =>
+      //         S.documentList()
+      //           .title("Variants")
+      //           .menuItems(S.documentTypeList("productVariant").getMenuItems())
+      //           .filter("_type == $type && productId == $id")
+      //           .params({
+      //             type: "productVariant",
+      //             id: Number(productId.replace("product-", "")),
+      //           })
+      //           .child((documentId) =>
+      //             S.document()
+      //               .documentId(documentId)
+      //               .schemaType("productVariant")
+      //           )
+      //       )
+      //   ),
       S.listItem()
         .title("Collection")
         .icon(FiGrid)
