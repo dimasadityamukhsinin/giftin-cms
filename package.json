@@ -1,8 +1,8 @@
 {
   "private": false,
-  "name": "example-studio",
+  "name": "giftin",
   "version": "1.0.0",
-  "author": "Lucas Vocos <lucasvocos@gmail.com>",
+  "author": "Dimas Aditya Mukhsinin <dimasadityamukhsinin@gmail.com>",
   "engines": {
     "node": "10.x"
   },

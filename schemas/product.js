@@ -17,6 +17,7 @@ export default {
       title: "Title",
       type: "string",
       fieldset: "shopify",
+      readOnly: true,
     },
     {
       name: "id",
@@ -35,8 +36,8 @@ export default {
       hidden: true,
     },
     {
-      name: "defaultPrice",
-      title: "Default Price",
+      name: "price",
+      title: "Price",
       type: "string",
       description: "This comes from Shopify and cannot be changed",
       readOnly: true,
@@ -46,6 +47,14 @@ export default {
       name: "slug",
       title: "Slug",
       type: "slug",
+      description: "This comes from Shopify and cannot be changed",
+      readOnly: true,
+      fieldset: "shopify",
+    },
+    {
+      name: "sku",
+      title: "SKU",
+      type: "string",
       description: "This comes from Shopify and cannot be changed",
       readOnly: true,
       fieldset: "shopify",
@@ -70,7 +79,7 @@ export default {
   preview: {
     select: {
       title: "title",
-      media: "mainImage",
+      media: "image",
     },
   },
 };
