@@ -57,13 +57,13 @@ export default {
       options: {
         hotspot: true,
       },
-      validation: (Rule) => Rule.required().warning("Cannot be empty"),
+      validation: Rule => Rule.required()
     },
     {
       name: "productDescription",
       title: "Product Description",
       type: "blockContent",
-      validation: (Rule) => Rule.required().warning("Cannot be empty"),
+      validation: Rule => Rule.required()
     },
   ],
 
