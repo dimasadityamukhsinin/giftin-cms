@@ -25,6 +25,19 @@ export default {
       type: "string",
       readOnly: true,
     },
+    {
+      name: "product",
+      title: "Product",
+      type: "array",
+      of: [
+        {
+          title: "Title",
+          name: "title",
+          type: "reference",
+          to: [{ type: "product" }],
+        },
+      ],
+    },
   ],
   preview: {
     select: {
