@@ -36,6 +36,14 @@ export default {
       hidden: true,
     },
     {
+      name: "variantId",
+      title: "Variant ID",
+      type: "number",
+      description: "This comes from Shopify and cannot be changed",
+      readOnly: true,
+      hidden: true,
+    },
+    {
       name: "price",
       title: "Price",
       type: "string",
