@@ -1,11 +1,11 @@
 {
   "root": true,
   "api": {
-    "projectId": "0w0e4d6b",
+    "projectId": "ll3747zb",
     "dataset": "production"
   },
   "project": {
-    "name": "New Project",
+    "name": "GiftIn",
     "basePath": "/"
   },
   "plugins": [
